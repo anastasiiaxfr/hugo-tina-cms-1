@@ -1,7 +1,12 @@
 ---
-title: 'Hello, World!'
+title: TEST2
+author: content/authors/author-1.md
+time: 2023-07-04T21:00:00.000Z
+imgSrc: /photo_2023-02-06_10-59-51.jpg
 tags:
   - tag1
+categories:
+  - movies
 ---
 
 ## Hello World!

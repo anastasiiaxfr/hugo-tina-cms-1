@@ -33,13 +33,136 @@ export default defineConfig({
             required: true,
           },
           {
+            label: "Author",
+            name: "author",
+            type: "reference",
+            collections: ["authors"]
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "DateTime",
+            ui: {
+              timeFormat: "hh:mm A"
+            },
+          },
+          {
+            type: 'image',
+            label: 'Thumbnail',
+            name: 'imgSrc',
+          },
+          {
+            label: 'Tags',
+            name: 'tags',
+            type: 'string',
+            list: true,
+          },
+          {
+            label: 'Categories',
+            name: 'categories',
+            type: 'string',
+            list: true,
+            options: [
+              {
+                value: 'movies',
+                label: 'Movies',
+              },
+              {
+                value: 'music',
+                label: 'Music',
+              },
+            ],
+          },
+          
+          {
             type: "rich-text",
             name: "body",
             label: "Body",
             isBody: true,
           },
+          
         ],
       },
+      {
+        label: "Blogs",
+        name: "blogs",
+        path: "content/blogs",
+        fields: [
+            {
+                type: "string",
+                name: "title",
+                label: "Title",
+                isTitle: true,
+                required: true,
+            },
+            {
+                label: "Author",
+                name: "author",
+                type: "reference",
+                collections: ["authors"]
+              },
+            {
+                type: "datetime",
+                name: "date",
+                label: "DateTime",
+                ui: {
+                  timeFormat: "HH:mm"
+                },
+              },
+            
+              {
+                type: 'image',
+                label: 'Thumbnail',
+                name: 'imgSrc',
+              },
+              {
+                label: 'Tags',
+                name: 'tags',
+                type: 'string',
+                list: true,
+              },
+              {
+                label: 'Categories',
+                name: 'categories',
+                type: 'string',
+                list: true,
+                options: [
+                  {
+                    value: 'movies',
+                    label: 'Movies',
+                  },
+                  {
+                    value: 'music',
+                    label: 'Music',
+                  },
+                ],
+              },
+            {
+                type: "rich-text",
+                name: "body",
+                label: "Body",
+                isBody: true,
+            },
+           
+        ]
+      },
+      {
+        name: "authors",
+        label: "Authors",
+        path: "content/authors",
+        fields: [{
+            type: "string",
+            name: "name",
+            label: "Name",
+            isTitle: true,
+            required: true,
+          }]
+      }
+   
+
+
+      
+
     ],
   },
 });

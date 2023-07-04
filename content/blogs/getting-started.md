@@ -1,5 +1,11 @@
 +++
 title = "Puppet - Getting Started"
+date = 2022-08-09T15:38:30+08:00
+header_img = ""
+toc = true
+tags = ["documentation", "guide"]
+categories = []
+series = ["Themes Guide"]
 +++
 
 Puppet is a responsive, simple and clean [Hugo](https://gohugo.io/) theme based on the [Huxblog Jekyll theme](https://github.com/Huxpro/huxpro.github.io). 
