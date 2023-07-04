@@ -1,0 +1,26 @@
+{
+  "name": "hugo-tina",
+  "version": "1.0.0",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/275ce227-7872-4314-8b54-5499ba237c18/deploy-status)](https://app.netlify.com/sites/hugo-theme-puppet/deploys)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tinacms build && hugo server",
+    "build": "tinacms build && hugo --gc --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anastasiiaxfr/hugo-tina-cms-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anastasiiaxfr/hugo-tina-cms-1/issues"
+  },
+  "homepage": "https://github.com/anastasiiaxfr/hugo-tina-cms-1#readme",
+  "dependencies": {
+    "@tinacms/cli": "^1.5.22",
+    "tinacms": "^1.5.13"
+  }
+}
